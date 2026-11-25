@@ -342,7 +342,7 @@ class SecurityTestWindow:
 
         wordlist_row = ttk.Frame(crack_frame)
         wordlist_row.pack(fill="x", pady=(4, 0))
-        self.wordlist_listbox = tk.Listbox(wordlist_row, height=4, bg="#111", fg=FG_COLOR, selectbackground="#333")
+        self.wordlist_listbox = tk.Listbox(wordlist_row, height=4, bg="#111c2a", fg=FG_COLOR, selectbackground="#253b55")
         self.wordlist_listbox.pack(side="left", fill="x", expand=True)
         self.wordlist_listbox.insert("end", "/usr/share/wordlists/rockyou.txt")
 
@@ -358,7 +358,7 @@ class SecurityTestWindow:
         self.result_label.pack(fill="x")
 
         ttk.Label(self.win, text="Activity Log:", padding=(12, 0)).pack(anchor="w")
-        self.log_text = tk.Text(self.win, height=14, state="disabled", wrap="word", bg="#111", fg="#ddd")
+        self.log_text = tk.Text(self.win, height=14, state="disabled", wrap="word", bg="#111c2a", fg="#e4eaf2")
         self.log_text.pack(fill="both", expand=True, padx=12, pady=(0, 12))
 
     def _on_auth_toggle(self):
